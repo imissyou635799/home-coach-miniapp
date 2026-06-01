@@ -1,0 +1,48 @@
+<view class="parent-courses">
+  <view class="data-hero">
+    <view class="hero-label">📊 数据看得见</view>
+    <view class="hero-title">每一次训练都有记录</view>
+    <view class="hero-sub">可视化数据 · 进步清晰可见</view>
+  </view>
+
+  <view class="quick card">
+    <view class="quick-item"><view class="quick-icon">📋</view><text>课程包</text></view>
+    <view class="quick-item"><view class="quick-icon">📝</view><text>训练反馈</text></view>
+    <view class="quick-item"><view class="quick-icon">📊</view><text>成长记录</text></view>
+    <view class="quick-item"><view class="quick-icon">☎</view><text>联系教练</text></view>
+  </view>
+
+  <view wx:if="{{payCourseId && firstPackage.student}}" class="pay-box card">
+    <view class="section-title">付款确认</view>
+    <input placeholder="付款金额" type="number" value="{{payAmount}}" bindinput="setPayAmount"></input>
+    <button class="primary-btn" bindtap="submitPayment">提交已付款</button>
+  </view>
+
+  <view class="section-title">进行中的课程</view>
+  <view wx:if="{{packages.length === 0}}" class="empty card">还没有开通课包</view>
+  <view wx:for="{{packages}}" wx:key="id" class="pkg-card card">
+    <view class="pkg-head">
+      <view>
+        <view class="pkg-title">{{item.name}}</view>
+        <view class="muted">课程进度</view>
+      </view>
+      <view class="status">{{item.status === 'active' ? '进行中' : '已用完'}}</view>
+    </view>
+    <view class="progress-text">已消 {{item.usedLessons}} / {{item.totalLessons}} 次</view>
+    <view class="progress"><view style="width: {{item.percent}}%;"></view></view>
+    <view class="data-grid">
+      <view wx:for="{{item.summary}}" wx:key="id" class="data-item">
+        <view class="value">{{item.displayValue}}</view>
+        <view class="muted">{{item.item}}</view>
+        <view class="change">{{item.change || '持续记录'}}</view>
+      </view>
+    </view>
+    <view class="trend-title">📈 成长趋势</view>
+    <view class="bars">
+      <view wx:for="{{[80,70,62,54,48]}}" wx:key="*this" class="bar" style="height: {{item}}rpx;"></view>
+    </view>
+    <view class="coach">🏅 {{item.coach.name}}</view>
+  </view>
+
+  <app-tabbar role="parent" active="courses"></app-tabbar>
+</view>

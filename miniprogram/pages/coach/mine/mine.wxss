@@ -1,0 +1,54 @@
+.profile {
+  padding: 28rpx;
+  display: flex;
+  align-items: center;
+  gap: 22rpx;
+}
+
+.avatar {
+  width: 94rpx;
+  height: 94rpx;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #f6a623;
+  font-size: 46rpx;
+}
+
+.name {
+  font-size: 34rpx;
+  font-weight: 900;
+}
+
+.form {
+  padding: 24rpx;
+  display: grid;
+  gap: 18rpx;
+}
+
+input,
+textarea {
+  padding: 18rpx 20rpx;
+  border-radius: 14rpx;
+  background: #f5f7fb;
+}
+
+textarea {
+  min-height: 160rpx;
+}
+
+.pay,
+.switch {
+  margin-top: 20rpx;
+  height: 82rpx;
+  border-radius: 16rpx;
+  color: #fff;
+}
+
+.pay {
+  background: #f6a623;
+}
+
+.switch {
+  background: #0e3a5a;
+}

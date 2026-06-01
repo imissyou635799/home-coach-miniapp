@@ -1,0 +1,25 @@
+<view class="role-page">
+  <view class="brand">
+    <view class="logo">臂</view>
+    <view class="name">上门体育</view>
+    <view class="sub">最专业的学员管理工具</view>
+  </view>
+  <view class="choose">请选择您的身份</view>
+  <view class="role-card" bindtap="choose" data-role="coach">
+    <view class="role-icon medal">🏅</view>
+    <view class="role-copy">
+      <view class="role-title">我是教练</view>
+      <view class="role-desc">管理家长 · 课程安排 · 训练反馈</view>
+    </view>
+    <view class="arrow">›</view>
+  </view>
+  <view class="role-card" bindtap="choose" data-role="parent">
+    <view class="role-icon parent">👩</view>
+    <view class="role-copy">
+      <view class="role-title">我是家长</view>
+      <view class="role-desc">查看课程 · 训练反馈 · 孩子成长</view>
+    </view>
+    <view class="arrow">›</view>
+  </view>
+  <view class="slogan">— 让每一次训练都有记录 —</view>
+</view>

@@ -1,0 +1,19 @@
+{
+  "pages": [
+    "pages/role/role",
+    "pages/coach/home/home",
+    "pages/coach/courses/courses",
+    "pages/coach/mine/mine",
+    "pages/parent/home/home",
+    "pages/parent/courses/courses",
+    "pages/parent/mine/mine"
+  ],
+  "window": {
+    "navigationBarTitleText": "上门体育",
+    "navigationBarBackgroundColor": "#0e3a5a",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#f5f7fb"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

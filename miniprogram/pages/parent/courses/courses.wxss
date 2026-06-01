@@ -1,0 +1,166 @@
+.parent-courses {
+  min-height: 100vh;
+  padding: 28rpx 28rpx 140rpx;
+  background: #f5f7fb;
+}
+
+.data-hero {
+  height: 210rpx;
+  padding: 36rpx 38rpx;
+  border-radius: 18rpx;
+  color: #fff;
+  background: radial-gradient(circle at 88% 4%, rgba(255, 255, 255, 0.13), transparent 140rpx), linear-gradient(160deg, #194f75, #0a2f4c);
+  box-shadow: 0 14rpx 28rpx rgba(14, 58, 90, 0.18);
+}
+
+.hero-label {
+  display: inline-block;
+  padding: 4rpx 12rpx;
+  border-radius: 8rpx;
+  background: rgba(246, 166, 35, 0.24);
+  color: #ffd38a;
+  font-size: 22rpx;
+}
+
+.hero-title {
+  margin-top: 18rpx;
+  font-size: 36rpx;
+  font-weight: 900;
+}
+
+.hero-sub {
+  margin-top: 8rpx;
+  color: #c8dbea;
+}
+
+.quick {
+  margin-top: 26rpx;
+  padding: 26rpx 10rpx;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.quick-item {
+  text-align: center;
+  font-size: 23rpx;
+}
+
+.quick-icon {
+  width: 78rpx;
+  height: 78rpx;
+  margin: 0 auto 10rpx;
+  border-radius: 18rpx;
+  display: grid;
+  place-items: center;
+  background: #e9f5ff;
+  font-size: 40rpx;
+}
+
+.pay-box,
+.empty,
+.pkg-card {
+  padding: 26rpx;
+  margin-bottom: 22rpx;
+}
+
+.pay-box input {
+  height: 76rpx;
+  padding: 0 20rpx;
+  margin-bottom: 18rpx;
+  border-radius: 14rpx;
+  background: #f5f7fb;
+}
+
+.pkg-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 18rpx;
+}
+
+.pkg-title {
+  font-size: 34rpx;
+  font-weight: 900;
+}
+
+.status {
+  height: 46rpx;
+  padding: 0 16rpx;
+  border-radius: 999rpx;
+  display: flex;
+  align-items: center;
+  color: #167044;
+  background: #e8f5ee;
+  font-size: 22rpx;
+}
+
+.progress-text {
+  margin-top: 22rpx;
+  text-align: right;
+  color: #52616f;
+}
+
+.progress {
+  height: 16rpx;
+  margin-top: 10rpx;
+  border-radius: 999rpx;
+  overflow: hidden;
+  background: #edf2f7;
+}
+
+.progress view {
+  height: 100%;
+  border-radius: 999rpx;
+  background: #f6a623;
+}
+
+.data-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14rpx;
+  margin-top: 26rpx;
+}
+
+.data-item {
+  padding: 18rpx 8rpx;
+  text-align: center;
+  border-radius: 14rpx;
+  background: #fbfdff;
+  box-shadow: inset 0 0 0 1rpx #eef3f7;
+}
+
+.value {
+  font-size: 32rpx;
+  font-weight: 900;
+}
+
+.change {
+  margin-top: 4rpx;
+  color: #167044;
+  font-size: 21rpx;
+}
+
+.trend-title {
+  margin-top: 34rpx;
+  font-weight: 900;
+}
+
+.bars {
+  height: 170rpx;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  margin-top: 20rpx;
+  border-radius: 16rpx;
+  background: linear-gradient(180deg, #f8fbff, #eef4f8);
+}
+
+.bar {
+  width: 38rpx;
+  border-radius: 8rpx 8rpx 0 0;
+  background: linear-gradient(180deg, #ffc04d, #f6a623);
+}
+
+.coach {
+  margin-top: 28rpx;
+  color: #52616f;
+}

@@ -1,0 +1,6 @@
+{
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "app-tabbar": "../../../components/tabbar/tabbar"
+  }
+}

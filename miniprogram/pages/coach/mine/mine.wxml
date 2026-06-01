@@ -1,0 +1,20 @@
+<view class="page">
+  <view class="profile card">
+    <view class="avatar">🏅</view>
+    <view>
+      <view class="name">{{profile.name}}</view>
+      <view class="muted">会员有效期至 {{profile.memberExpireAt || '未开通'}}</view>
+    </view>
+  </view>
+  <view class="section-title">个人资料</view>
+  <view class="form card">
+    <input placeholder="教练姓名" value="{{profile.name}}" bindinput="setName"></input>
+    <input placeholder="服务区域" value="{{profile.serviceArea}}" bindinput="setArea"></input>
+    <input placeholder="从业年限" type="number" value="{{profile.years}}" bindinput="setYears"></input>
+    <textarea placeholder="教学简介" value="{{profile.intro}}" bindinput="setIntro"></textarea>
+    <button class="primary-btn" bindtap="save">保存资料</button>
+  </view>
+  <button class="pay" bindtap="buyMember">开通 / 续费 99 元会员</button>
+  <button class="switch" bindtap="switchRole">切换身份</button>
+  <app-tabbar role="coach" active="mine"></app-tabbar>
+</view>

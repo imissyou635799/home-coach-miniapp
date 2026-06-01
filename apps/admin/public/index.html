@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>上门体育管理后台</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="logo">臂</div>
+      <div>
+        <strong>上门体育</strong>
+        <span>管理后台</span>
+      </div>
+    </div>
+    <button class="nav active" data-view="dashboard">首页数据</button>
+    <button class="nav" data-view="coaches">教练管理</button>
+    <button class="nav" data-view="parents">家长管理</button>
+    <button class="nav" data-view="students">学员管理</button>
+    <button class="nav" data-view="orders">会员订单</button>
+    <button class="nav" data-view="banners">轮播图</button>
+  </aside>
+  <main class="main">
+    <header class="topbar">
+      <div>
+        <h1 id="pageTitle">首页数据</h1>
+        <p>标准一期版运营后台</p>
+      </div>
+      <div class="login">
+        <input id="username" value="admin" aria-label="后台账号">
+        <input id="password" value="admin123" type="password" aria-label="后台密码">
+        <button id="loginBtn">登录</button>
+      </div>
+    </header>
+    <section id="notice" class="notice">请先登录后台账号。</section>
+    <section id="content"></section>
+  </main>
+  <script src="./app.js"></script>
+</body>
+</html>

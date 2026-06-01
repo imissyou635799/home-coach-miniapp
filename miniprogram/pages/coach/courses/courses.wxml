@@ -1,0 +1,46 @@
+<view class="page">
+  <view class="section-title">课程管理</view>
+  <view class="form card">
+    <input placeholder="课程名称" value="{{courseForm.name}}" bindinput="setCourseName"></input>
+    <input placeholder="价格" type="number" value="{{courseForm.price}}" bindinput="setCoursePrice"></input>
+    <input placeholder="课时次数" type="number" value="{{courseForm.lessonCount}}" bindinput="setCourseCount"></input>
+    <button class="primary-btn" bindtap="createCourse">新增课程</button>
+  </view>
+  <view wx:for="{{courses}}" wx:key="id" class="row card">
+    <view>
+      <view class="row-title">{{item.name}}</view>
+      <view class="muted">¥{{item.price}} · {{item.lessonCount}} 次 · {{item.status}}</view>
+    </view>
+    <button size="mini" bindtap="toggleCourse" data-id="{{item.id}}" data-status="{{item.status}}">{{item.status === 'on' ? '下架' : '上架'}}</button>
+  </view>
+
+  <view class="section-title">学员和课包</view>
+  <view wx:for="{{students}}" wx:key="id" class="student card">
+    <view class="row-title">{{item.name}}</view>
+    <view class="muted">{{item.grade}} · {{item.goal}}</view>
+    <view wx:for="{{item.packages}}" wx:key="id" class="pkg">
+      {{item.name}}：剩余 {{item.remainingLessons}} / {{item.totalLessons}} 次
+    </view>
+  </view>
+
+  <view class="section-title">付款待核实</view>
+  <view wx:if="{{payments.length === 0}}" class="empty card">暂无待核实付款</view>
+  <view wx:for="{{payments}}" wx:key="id" class="row card">
+    <view>
+      <view class="row-title">{{item.parent.nickname}} · {{item.course.name}}</view>
+      <view class="muted">金额 ¥{{item.amount}} · {{item.status}}</view>
+    </view>
+    <button size="mini" bindtap="confirmPay" data-id="{{item.id}}" wx:if="{{item.status === 'pending'}}">确认</button>
+  </view>
+
+  <view class="section-title">快速记录课程</view>
+  <view class="form card">
+    <picker range="{{packages}}" range-key="name" bindchange="pickPackage">
+      <view class="picker">{{selectedPackage.name || '选择课包'}}</view>
+    </picker>
+    <input placeholder="训练内容" value="{{lessonContent}}" bindinput="setLessonContent"></input>
+    <button class="primary-btn" bindtap="recordLesson">记录并消课</button>
+  </view>
+
+  <app-tabbar role="coach" active="courses"></app-tabbar>
+</view>

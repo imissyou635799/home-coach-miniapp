@@ -1,0 +1,15 @@
+{
+  "name": "home-coach-miniapp",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev:api": "node apps/api/server.js",
+    "dev:admin": "node apps/admin/static-server.js",
+    "check": "node scripts/check.mjs",
+    "seed": "node apps/api/server.js --seed-only"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

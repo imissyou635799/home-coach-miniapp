@@ -1,0 +1,25 @@
+<view class="page">
+  <view class="coach-card card" wx:if="{{home.coach}}">
+    <view class="avatar">🏅</view>
+    <view>
+      <view class="name">{{home.coach.name}}</view>
+      <view class="muted">已实名认证 · {{home.coach.serviceArea}}</view>
+    </view>
+  </view>
+
+  <view class="section-title">教练介绍</view>
+  <view class="intro card">{{home.coach.intro || '教练还没有填写简介'}}</view>
+
+  <view class="section-title">课程套餐</view>
+  <view wx:for="{{home.courses}}" wx:key="id" class="course card">
+    <view>
+      <view class="course-title">{{item.name}}</view>
+      <view class="muted">{{item.lessonCount}} 次 · {{item.target}}</view>
+    </view>
+    <view class="price">¥{{item.price}}</view>
+    <button class="primary-btn" bindtap="payConfirm" data-id="{{item.id}}">我已付款</button>
+  </view>
+
+  <view wx:if="{{!home.coach}}" class="empty card">还没有绑定教练，请让教练发送邀请卡片</view>
+  <app-tabbar role="parent" active="home"></app-tabbar>
+</view>

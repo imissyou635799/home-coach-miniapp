@@ -1,0 +1,18 @@
+{
+  "description": "上门体育小程序",
+  "packOptions": {
+    "ignore": []
+  },
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "minified": true
+  },
+  "compileType": "miniprogram",
+  "libVersion": "3.7.0",
+  "appid": "touristappid",
+  "projectname": "home-coach-miniapp",
+  "condition": {}
+}

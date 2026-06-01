@@ -1,0 +1,42 @@
+.profile {
+  padding: 28rpx;
+  display: flex;
+  align-items: center;
+  gap: 22rpx;
+}
+
+.avatar {
+  width: 94rpx;
+  height: 94rpx;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #37b7ff;
+  font-size: 46rpx;
+}
+
+.name {
+  font-size: 34rpx;
+  font-weight: 900;
+}
+
+.menu {
+  padding: 8rpx 26rpx;
+}
+
+.menu view {
+  padding: 28rpx 0;
+  border-bottom: 1rpx solid #edf2f7;
+}
+
+.menu view:last-child {
+  border-bottom: 0;
+}
+
+.switch {
+  margin-top: 20rpx;
+  height: 82rpx;
+  border-radius: 16rpx;
+  color: #fff;
+  background: #0e3a5a;
+}

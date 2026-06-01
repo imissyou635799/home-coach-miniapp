@@ -1,0 +1,6 @@
+<view class="tabbar">
+  <view wx:for="{{items}}" wx:key="page" class="tab {{active === item.key ? 'active' : ''}}" bindtap="go" data-page="{{item.page}}">
+    <text class="icon">{{item.icon}}</text>
+    <text>{{item.text}}</text>
+  </view>
+</view>

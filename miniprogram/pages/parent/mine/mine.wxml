@@ -1,0 +1,20 @@
+<view class="page">
+  <view class="profile card">
+    <view class="avatar">👩</view>
+    <view>
+      <view class="name">李明轩妈妈</view>
+      <view class="muted">家长端</view>
+    </view>
+  </view>
+  <view class="section-title">常用功能</view>
+  <view class="menu card">
+    <view>孩子资料</view>
+    <view>我的教练</view>
+    <view>消息通知</view>
+    <view>已付款记录</view>
+    <view>保险入口</view>
+    <view>联系客服</view>
+  </view>
+  <button class="switch" bindtap="switchRole">切换身份</button>
+  <app-tabbar role="parent" active="mine"></app-tabbar>
+</view>

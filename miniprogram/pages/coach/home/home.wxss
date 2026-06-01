@@ -1,0 +1,168 @@
+.coach-page {
+  min-height: 100vh;
+  padding: 0 28rpx 140rpx;
+  background: #f5f7fb;
+}
+
+.hero {
+  margin: 0 -28rpx;
+  padding: 76rpx 40rpx 34rpx;
+  color: #fff;
+  background: radial-gradient(circle at 82% 5%, rgba(255, 255, 255, 0.12), transparent 170rpx), linear-gradient(180deg, #194f75, #0a2f4c);
+}
+
+.hero-top,
+.coach-info,
+.lesson-meta {
+  display: flex;
+  align-items: center;
+}
+
+.hero-top {
+  justify-content: space-between;
+}
+
+.brand {
+  font-size: 34rpx;
+  font-weight: 900;
+}
+
+.bell {
+  width: 64rpx;
+  height: 64rpx;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.coach-info {
+  gap: 22rpx;
+  margin-top: 34rpx;
+}
+
+.avatar {
+  width: 92rpx;
+  height: 92rpx;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #f6a623;
+  font-size: 46rpx;
+}
+
+.coach-name {
+  font-size: 32rpx;
+  font-weight: 900;
+}
+
+.member {
+  margin-top: 8rpx;
+  color: #c8dbea;
+  font-size: 23rpx;
+}
+
+.banner {
+  height: 210rpx;
+  margin-top: 18rpx;
+}
+
+.banner-card {
+  height: 188rpx;
+  padding: 26rpx 34rpx;
+  border-radius: 18rpx;
+  color: #fff;
+  background: radial-gradient(circle at 88% 12%, rgba(255, 255, 255, 0.18), transparent 120rpx), linear-gradient(135deg, #ff9b00, #ff6a00);
+  box-shadow: 0 16rpx 28rpx rgba(255, 125, 0, 0.22);
+}
+
+.banner-label {
+  font-size: 22rpx;
+  opacity: 0.9;
+}
+
+.banner-title {
+  margin-top: 8rpx;
+  font-size: 30rpx;
+  font-weight: 900;
+}
+
+.banner-sub {
+  margin-top: 8rpx;
+  font-size: 23rpx;
+}
+
+.banner-btn {
+  width: 132rpx;
+  height: 48rpx;
+  margin-top: 16rpx;
+  border-radius: 999rpx;
+  display: grid;
+  place-items: center;
+  background: rgba(255, 255, 255, 0.28);
+  font-size: 22rpx;
+  font-weight: 700;
+}
+
+.quick {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24rpx 12rpx;
+  padding: 26rpx 12rpx;
+}
+
+.quick-item {
+  text-align: center;
+  color: #354b5f;
+  font-size: 23rpx;
+}
+
+.quick-icon {
+  width: 76rpx;
+  height: 76rpx;
+  margin: 0 auto 10rpx;
+  border-radius: 20rpx;
+  display: grid;
+  place-items: center;
+  background: #e9f5ff;
+  font-size: 40rpx;
+}
+
+.lesson,
+.empty {
+  padding: 28rpx;
+  margin-bottom: 20rpx;
+}
+
+.lesson {
+  border-left: 8rpx solid #f6a623;
+}
+
+.lesson-time {
+  color: #d58b00;
+  font-weight: 800;
+}
+
+.lesson-name {
+  margin-top: 18rpx;
+  font-size: 30rpx;
+  font-weight: 900;
+}
+
+.lesson-content {
+  margin-top: 10rpx;
+  color: #52616f;
+}
+
+.lesson-meta {
+  gap: 20rpx;
+  margin-top: 18rpx;
+}
+
+.lesson-meta text {
+  padding: 8rpx 14rpx;
+  border-radius: 999rpx;
+  color: #0e3a5a;
+  background: #edf7ff;
+  font-size: 22rpx;
+}

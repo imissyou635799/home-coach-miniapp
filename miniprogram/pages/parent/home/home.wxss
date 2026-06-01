@@ -1,0 +1,43 @@
+.coach-card {
+  padding: 28rpx;
+  display: flex;
+  align-items: center;
+  gap: 22rpx;
+}
+
+.avatar {
+  width: 94rpx;
+  height: 94rpx;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #f6a623;
+  font-size: 46rpx;
+}
+
+.name {
+  font-size: 34rpx;
+  font-weight: 900;
+}
+
+.intro,
+.empty {
+  padding: 26rpx;
+}
+
+.course {
+  padding: 26rpx;
+  margin-bottom: 20rpx;
+}
+
+.course-title {
+  font-size: 32rpx;
+  font-weight: 900;
+}
+
+.price {
+  margin: 16rpx 0;
+  color: #f08a00;
+  font-size: 34rpx;
+  font-weight: 900;
+}
