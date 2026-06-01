@@ -55,13 +55,15 @@ function nodeCheck(file) {
   });
 }
 
+const smokePort = 3199;
+
 function request(pathname, options = {}) {
   const body = options.body ? JSON.stringify(options.body) : "";
   return new Promise((resolve, reject) => {
     const req = http.request(
       {
         hostname: "localhost",
-        port: 3100,
+        port: smokePort,
         path: pathname,
         method: options.method || "GET",
         headers: {
@@ -90,7 +92,7 @@ function request(pathname, options = {}) {
 async function smoke() {
   const server = spawn(process.execPath, ["apps/api/server.js"], {
     cwd: root,
-    env: { ...process.env, DATA_FILE: "./data/check.runtime.json" },
+    env: { ...process.env, API_PORT: String(smokePort), DATA_FILE: "./data/check.runtime.json" },
     stdio: "pipe"
   });
   try {
